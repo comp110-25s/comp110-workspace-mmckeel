@@ -4,7 +4,7 @@ __author__: str = "730556813"
 
 
 def invert(input: dict[str, str]) -> dict[str, str]:
-    """This function"""
+    """This function reverses the positions of the key and value in the dictionary"""
     switched: dict[str, str] = {}
     for key in input:
         switched_key: str = input[key]
@@ -16,7 +16,7 @@ def invert(input: dict[str, str]) -> dict[str, str]:
 
 
 def count(value: list[str]) -> dict[str, int]:
-    """"""
+    """Counts number of times a value is listed, returns value and said number"""
     return_dict: dict[str, int] = {}
     idx: int = 0
     while idx < len(value):
@@ -29,7 +29,7 @@ def count(value: list[str]) -> dict[str, int]:
 
 
 def favorite_color(given: dict[str, str]) -> str:
-    """"""
+    """Returns the most frequent favorite color between all individuals"""
     colors: list[str] = []
     for name in given:
         colors.append(given[name])
@@ -44,7 +44,7 @@ def favorite_color(given: dict[str, str]) -> str:
 
 
 def bin_len(string_list: list[str]) -> dict[int, set[str]]:
-    """"""
+    """Condenses and groups all values in dict by listing number of times present"""
     return_dict: dict[int, set[str]] = {}
     for string in string_list:
         if len(string) in return_dict:
